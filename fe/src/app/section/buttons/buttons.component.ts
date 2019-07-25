@@ -9,11 +9,17 @@ export class ButtonsComponent implements OnInit {
 
   @Output() clickEvent = new EventEmitter<string>();
 
+  @Output() testEvent = new EventEmitter();
+
   constructor() { }
 
   count() {
+    this.clickEvent.emit('change-!!');
+  }
 
-    this.clickEvent.emit(123123);
+  iAmStop() {
+    // console.log('$event : ', $event);
+    this.testEvent.emit('나를 전달해죠');
   }
 
   ngOnInit() {

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, SimpleChange } from '@angular/core';
 
 @Component({
   selector: 'app-time-display',
@@ -7,11 +7,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TimeDisplayComponent implements OnInit {
 
-  @Input() inputData : string;
-  test = 1;
+  @Input() inputData;
+  min: number = 0;
+  sec: number = 0;
+  ms: number = 0;
 
   constructor() {
-    console.log(this.inputData);
+    console.log("inputData : ", this.inputData);
+  }
+
+  ngOnChanges(changes: SimpleChange) {
+    
   }
   
 

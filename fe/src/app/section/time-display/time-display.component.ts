@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-time-display',
@@ -7,12 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimeDisplayComponent implements OnInit {
 
+  @Input() inputData : string;
   test = 1;
 
-  constructor() { 
-    setInterval(() => {
-      this.test++;
-    }, 1000);
+  constructor() {
+    console.log(this.inputData);
   }
   
 

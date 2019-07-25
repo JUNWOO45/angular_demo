@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionComponent implements OnInit {
 
+  present = 'junwoo'
   constructor() { }
 
+  startTime(time) {
+    this.present = time;
+  }
+  
   ngOnInit() {
   }
 

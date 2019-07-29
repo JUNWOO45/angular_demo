@@ -16,6 +16,7 @@ export class SectionComponent implements OnInit {
   
 
   startTime($event) {
+    console.log("start 버튼 눌렀음 : ", $event);
     this.present = $event;
   }
 

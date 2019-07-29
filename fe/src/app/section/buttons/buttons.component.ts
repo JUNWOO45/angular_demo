@@ -14,7 +14,7 @@ export class ButtonsComponent implements OnInit {
   constructor() { }
 
   count() {
-    this.clickEvent.emit('change-!!');
+    this.clickEvent.emit('start');
   }
 
   iAmStop() {

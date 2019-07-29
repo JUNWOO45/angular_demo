@@ -17,7 +17,9 @@ export class TimeDisplayComponent implements OnInit {
   }
 
   ngOnChanges(changes: SimpleChange) {
-    
+    for(let propName in changes) {
+      console.log('propName : ', propName);
+    }
   }
   
 

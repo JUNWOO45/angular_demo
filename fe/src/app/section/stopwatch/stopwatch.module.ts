@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TimeDisplayComponent } from './time-display/time-display.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { StopwatchComponent } from './stopwatch.component';
+import { RouterModule, Routes } from '@angular/router';
 
 
 
@@ -12,11 +13,13 @@ import { StopwatchComponent } from './stopwatch.component';
     ButtonsComponent,
     StopwatchComponent
   ],
-  imports: [
-    CommonModule
-  ],
   exports: [
     StopwatchComponent
-  ]
+  ],
+  imports: [
+    CommonModule,
+    RouterModule
+  ],
+  
 })
 export class StopwatchModule { }

@@ -13,8 +13,11 @@ export class ButtonsComponent implements OnInit {
 
   constructor() { }
 
-  count() {
-    this.clickEvent.emit('start');
+  // count() {
+  //   this.clickEvent.emit('start');
+  // }
+  executeButton(command) {
+    this.clickEvent.emit(command);
   }
 
   iAmStop() {

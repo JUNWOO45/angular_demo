@@ -1,9 +1,14 @@
 <div class="title">
   <div class="display">
-    <app-time-display [inputData]="present"></app-time-display>
-    <app-buttons 
+    <app-time-display></app-time-display>
+    <app-buttons (clickEvent)="commandText = $event"></app-buttons>
+    {{commandText}}
+
+
+    <!-- <app-time-display [inputData]="present"></app-time-display> -->
+    <!-- <app-buttons 
       (testEvent)="targetFunc($event)" 
       (clickEvent)="startTime($event)"
-    ></app-buttons>
+    ></app-buttons> -->
   </div>
 </div>

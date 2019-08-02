@@ -1,13 +1,14 @@
 <div class="title">
-    <div class="display">
-      <app-time-display></app-time-display>
-      <!-- <app-buttons (clickEvent)="commandText = $event"></app-buttons>
-      {{commandText}} -->
-    </div>
-
-    <a [routerLink]="'/clock'">시계로 이동</a>
-    <button (click)="goClock()">
+  <div class="display">
+    <app-time-display class="time-zone">
+      <div>여기는 타임디스플레이 내부..</div>
+    </app-time-display>
+    <!-- <app-buttons (clickEvent)="commandText = $event"></app-buttons>
+    {{commandText}} -->
+    <button (click)="goClock()" class="go-clock">
       시계로 이동하는 버튼
     </button>
   </div>
+  <!-- <a [routerLink]="'/clock'">시계로 이동</a> -->
+</div>
   

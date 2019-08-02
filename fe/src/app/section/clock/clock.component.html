@@ -1,7 +1,10 @@
-
-<p class="time-string">
-  <!-- {{ getCurrentTime() }} method를 바인딩하는것은 비추천 -->
-  {{ timeString }}
-</p>
-
-<button (click)="goStopwatch()">스탑워치로 이동</button>
+<div class="title">
+  <div class="display">
+    <p class="time-zone">
+      <!-- {{ getCurrentTime() }} method를 바인딩하는것은 비추천 -->
+      {{ timeString }}
+    </p>
+    
+    <button class="stopwatch" (click)="goStopwatch()">스탑워치로 이동</button>
+  </div>
+</div>

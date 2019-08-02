@@ -12,7 +12,7 @@ import { PageToggleService } from 'src/app/share/page-toggle.service';
 })
 export class ClockComponent implements OnInit {
 
-  timeString: string
+  timeString: string = 'YYYY-MM-DD HH:mm:ss';
 
   constructor(
     private router:Router,

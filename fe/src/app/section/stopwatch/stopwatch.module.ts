@@ -4,6 +4,7 @@ import { TimeDisplayComponent } from './time-display/time-display.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { StopwatchComponent } from './stopwatch.component';
 import { RouterModule, Routes } from '@angular/router';
+import { PageToggleService } from 'src/app/share/page-toggle.service';
 
 
 
@@ -20,6 +21,8 @@ import { RouterModule, Routes } from '@angular/router';
     CommonModule,
     RouterModule
   ],
-  
+  providers: [
+    PageToggleService
+  ]
 })
 export class StopwatchModule { }
